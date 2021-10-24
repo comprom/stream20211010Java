@@ -1,6 +1,8 @@
 package com.lesson1.homework1;
 
 public class HomeWorkApp {
+    private static final char NEW_LINE = '\n';
+
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
@@ -9,17 +11,19 @@ public class HomeWorkApp {
     }
 
     private static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-        System.out.println();
+        String fruit1 = "Orange";
+        String fruit2 = "Banana";
+        String fruit3 = "Apple";
+        System.out.println(fruit1 + NEW_LINE +
+                           fruit2 + NEW_LINE +
+                           fruit3 + NEW_LINE);
     }
 
     private static void checkSumSign() {
         int a = 0;
         int b = 1;
-        System.out.println(a + b >= 0 ? "Сумма положительная" : "Сумма отрицательная");
-        System.out.println();
+        System.out.println(a + b >= 0 ? "Сумма положительная" + NEW_LINE
+                                      : "Сумма отрицательная" + NEW_LINE);
     }
 
     private static void printColor() {
@@ -27,17 +31,18 @@ public class HomeWorkApp {
         String result;
         if (value <= 0) {
             result = "Красный";
+        } else if ((value > 0) && (value <= 100)) {
+            result = "Желтый";
         } else {
-            result = (value > 0 && value <= 100 ? "Желтый" : "Зеленый");
+            result = "Зеленый";
         }
-        System.out.println(result);
-        System.out.println();
+        System.out.println(result + NEW_LINE);
     }
 
     private static void compareNumbers() {
         int a = 0;
         int b = 1;
-        System.out.println(a >= b ? "a >= b" : "a < b" );
-        System.out.println();
+        System.out.println(a >= b ? "a >= b" + NEW_LINE
+                                  : "a < b" + NEW_LINE);
     }
 }
