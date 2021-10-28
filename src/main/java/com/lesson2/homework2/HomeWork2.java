@@ -1,3 +1,5 @@
+package com.lesson2.homework2;
+
 public class HomeWork2 {
     public static void main(String[] args) {
         int firstNumber = 0;
