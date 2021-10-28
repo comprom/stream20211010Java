@@ -1,4 +1,4 @@
-package com.lesson1.homework1;
+package com.lesson1;
 
 public class HomeWorkApp {
     private static final char NEW_LINE = '\n';
